@@ -1,0 +1,61 @@
+
+.card-list {
+  width: 90vw;
+  margin: 0 auto; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+   /* margin: 100px; */
+}
+
+
+@media screen and (max-width: 480px) {
+  .card-list {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.container-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #95dada;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 30px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.container-card:hover {
+  transform: scale(1.05);
+}
+
+.search {
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  width: 30%;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+input[type="search" i] {
+    -webkit-appearance: searchfield;
+    box-sizing: border-box;
+    font-size: 15px !important;
+}
+
+
+/* AIzaSyBXk2aWamhPQUg_GRtbH2PY8kFUa_UHpRs */
